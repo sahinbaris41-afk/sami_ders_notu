@@ -1,0 +1,10 @@
+﻿.venv/
+__pycache__/
+*.pyc
+.cache/academic_cache.json
+.cache/study_progress.json
+notes_archive/
+reports/
+analytics/
+question_bank/
+*.log
