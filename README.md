@@ -9,6 +9,18 @@ Bu surumun ana farki sudur:
 - BTU bolum verilerini ve akademik yayinlari resmi kaynaklardan cekip yerel onbellekte tutar.
 - Ders, konu, sinav donemi ve ilerleme durumuna gore calisma plani uretir.
 
+## Temsili Ekran Goruntuleri
+
+Asagidaki gorseller birebir ekran kaydi degil, uygulamanin ana akisini anlatmak icin hazirlanmis temsili arayuz gorunumleridir.
+
+### Dashboard Gorunumu
+
+![Temsili Dashboard Gorunumu](assets/dashboard-preview.svg)
+
+### Akademik Kadro ve Oneri Motoru
+
+![Temsili Akademik Zeka Gorunumu](assets/academic-intelligence-preview.svg)
+
 ## Temel Yetenekler
 
 ### 1. Profesyonel OCR
@@ -173,6 +185,31 @@ streamlit run Leksikograf_v18.py
 6. Tamamlanan maddeleri isaretleyin.
 7. Telafi plani ve haftalik raporu kontrol edin.
 
+## Ornek Kullanim Senaryolari
+
+### Senaryo 1: El Yazisini Temiz Nota Donusturme
+- Kullanici `Profesyonel OCR` sekmesine gelir.
+- Tek bir ders sayfasini yukler.
+- Sistem yerel OCR calistirir ve metni daha okunur hale getirir.
+- Sonuc arsive kaydedilir ve `.txt` veya `.md` olarak disari alinabilir.
+
+### Senaryo 2: Sinav Haftasi Icin Hedefli Calisma
+- Kullanici `Akademik Kadro > Konu Bazli Oneriler` alanina girer.
+- Dersi ve ilgili konulari secer.
+- `Vize Haftasi` veya `Final Haftasi` stratejisini isaretler.
+- Sistem en ilgili yayinlari, oncelikli ilk 5 kaynagi ve gunluk plani uretir.
+
+### Senaryo 3: Panik Modunda Hizli Toparlama
+- Kullanici sinava 3 gun kala `Son 3 Gun Panik Modu`nu secer.
+- Uygulama en yuksek getirili konulari ve en hizli okunabilir kaynaklari one cikarir.
+- 30 veya 60 dakikalik mini modlar ile odak bloklari olusturulur.
+
+### Senaryo 4: Kalan Konular Icin Telafi Plani
+- Kullanici tamamladigi maddeleri checkbox ile isaretler.
+- Sistem tamamlanma oranini hesaplar.
+- Yetismeyen maddeler otomatik telafi planina tasinir.
+- Haftalik raporda hangi konularin aksadigi ve ne kadar ilerleme saglandigi gorulur.
+
 ## Strateji Motoru
 
 ### Vize Haftasi
@@ -210,6 +247,10 @@ Tamamlanan maddeler isaretlendikce sistem:
 - Yerel OCR ve yerel cache var
 - Akademik veri resmi kaynaklardan gelir
 - Baglanti olmadiginda son yerel veri korunur
+
+## Surumleme
+
+Bu repo `CHANGELOG.md` ile surum notlarini takip eder. Ilk resmi etiket `v1.0.0`, `LEKSIKOGRAF v18` uygulamasinin API'siz, moduler ve akademik tavsiye motorlu ilk kararli yapisini temsil eder.
 
 ## Gelistirme Notlari
 Bu repo icinde eski surum dosyalari bulunabilir; aktif ve onerilen surum `Leksikograf_v18.py` ve `leksikograf/` paketidir.
